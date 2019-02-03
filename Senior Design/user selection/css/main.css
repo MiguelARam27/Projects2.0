@@ -23,25 +23,32 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 70vh;
+  height: 100%;
   background-color: black;
 }
-.container .forms div {
+.container .forms .person {
   background-color: #FC4E4E;
-  height: 100%;
+  height: 20px;
   width: 15%;
   display: flex;
   align-content: center;
   justify-content: center;
-  height: 55vh;
+  height: 30vh;
   border-radius: 20px;
 }
-.container .forms div h1 {
-  color: #f9f9f9;
-  text-shadow: 2px 4px 12px #f9f9f9;
-}
-.container .forms div:hover {
+.container .forms .person:hover {
   cursor: pointer;
+}
+.container .forms .person .girl {
+  background-image: url("img/girl.png");
+  height: 100%;
+  width: 100%;
+}
+.container .forms .person .boy {
+  background-image: url("img/boy.png");
+}
+.container .forms .person h1 {
+  color: #f9f9f9;
 }
 
 /*# sourceMappingURL=main.css.map */
