@@ -1,1 +1,1 @@
- window.setInterval(function(){window.location.href="next.html"},4100);
+//  window.setInterval(function(){window.location.href="next.html"},4100);

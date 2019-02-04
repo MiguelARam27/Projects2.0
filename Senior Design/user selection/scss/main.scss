@@ -1,7 +1,7 @@
 
 $welcome_font:'Coiny', cursive;
 
-body{
+.body{
     margin: 0 auto;
     
 
@@ -10,8 +10,9 @@ body{
 
 
 
-.container{
+.Micontainer{
     height:100vh;
+    
 
 
     .message{
@@ -33,16 +34,21 @@ body{
     }
 
     .forms{
-        display:flex;
-        justify-content: space-around;
-        width:100%;
+        display:grid;
+        margin:0 auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        justify-content: space-between;
+        
+        width:90%;
         height:100%;
-        background-color:black;
+    
 
         .person{
+            position: relative;
             background-color:#FC4E4E;
             height:20px;
-            width:15%;
+            width:100%;
             display:flex;
             align-content: center;
             justify-content: center;
@@ -52,21 +58,33 @@ body{
             &:hover{
                 cursor:pointer;
             }
+
+            .picture{
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-origin: center;
+                position: absolute;
+                top:-15%;
+            }
             .girl{
-                background-image: url('img/girl.png');
-                height:100%;
-                width:100%;
+                background-image: url('../img/girl.png');
+                height:100px;
+                width:50px;
 
 
             }
 
             .boy{
-                background-image: url('img/boy.png');
+                background-image: url('../img/boy.png');
+                height:100px;
+                width:50px;
+
 
             }
 
             h1{
               color:#f9f9f9;
+              position: absolute;
             //   text-shadow: 2px 4px 12px #f9f9f9;
             }
 

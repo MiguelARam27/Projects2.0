@@ -1,11 +1,11 @@
-body {
+.body {
   margin: 0 auto;
 }
 
-.container {
+.Micontainer {
   height: 100vh;
 }
-.container .message {
+.Micontainer .message {
   font-family: "Coiny", cursive;
   display: flex;
   align-content: center;
@@ -16,39 +16,52 @@ body {
   padding-top: 20px;
   text-align: center;
 }
-.container .message h1 {
+.Micontainer .message h1 {
   color: #f9f9f9;
 }
-.container .forms {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+.Micontainer .forms {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  justify-content: space-between;
+  width: 90%;
   height: 100%;
-  background-color: black;
 }
-.container .forms .person {
+.Micontainer .forms .person {
+  position: relative;
   background-color: #FC4E4E;
   height: 20px;
-  width: 15%;
+  width: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
   height: 30vh;
   border-radius: 20px;
 }
-.container .forms .person:hover {
+.Micontainer .forms .person:hover {
   cursor: pointer;
 }
-.container .forms .person .girl {
-  background-image: url("img/girl.png");
-  height: 100%;
-  width: 100%;
+.Micontainer .forms .person .picture {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: center;
+  position: absolute;
+  top: -15%;
 }
-.container .forms .person .boy {
-  background-image: url("img/boy.png");
+.Micontainer .forms .person .girl {
+  background-image: url("../img/girl.png");
+  height: 100px;
+  width: 50px;
 }
-.container .forms .person h1 {
+.Micontainer .forms .person .boy {
+  background-image: url("../img/boy.png");
+  height: 100px;
+  width: 50px;
+}
+.Micontainer .forms .person h1 {
   color: #f9f9f9;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */
