@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-color:cornflowerblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100%;
+}
+    
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    div{
+        height:200px;
+        width:200px;
+    }
+    .grid1{
+        background-color:orangered;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid2{
+        background-color:seagreen;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    button{
+        height:60px;
+        width:60px;
+        border-radius: 20px;
+        position: absolute;
+        left:48%;
+        top:70%;
+    }
+}

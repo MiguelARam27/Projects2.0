@@ -4,17 +4,60 @@ body {
   background-color: royalblue;
 }
 
+.Mnavbar {
+  position: fixed;
+  height: 15vh;
+  width: 100%;
+  z-index: 0;
+}
+.Mnavbar .Mnav_container {
+  margin: 0 auto;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 4fr 1fr;
+  grid-column-gap: 3px;
+  background: green;
+  width: 100%;
+  height: 100%;
+}
+.Mnavbar .Mnav_container .logo {
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+}
+.Mnavbar .Mnav_container .time {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.Mnavbar .Mnav_container div {
+  background: blue;
+  width: 100%;
+  height: 100%;
+}
+
 #MenuIcon {
   height: 25px;
   width: 50px;
   position: fixed;
   top: 50;
   left: 50;
+  padding: 20px 20px;
 }
 #MenuIcon:hover {
   cursor: pointer;
 }
-#MenuIcon #Menuline {
+#MenuIcon:hover #MenuLine {
+  width: 40px;
+}
+#MenuIcon:hover #MenuLine::before {
+  width: 50px;
+}
+#MenuIcon:hover #MenuLine::after {
+  width: 50px;
+}
+
+#MenuLine {
   height: 4px;
   width: 50px;
   background-color: #181818;
@@ -24,10 +67,7 @@ body {
   transform: translate(-50%, -50%);
   transition: all 0.3s;
 }
-#MenuIcon #Menuline:hover #MenuLine {
-  width: 40px;
-}
-#MenuIcon #Menuline::before {
+#MenuLine::before {
   content: "";
   height: 4px;
   width: 40px;
@@ -36,10 +76,7 @@ body {
   margin-top: 10px;
   transition: all 0.3s;
 }
-#MenuIcon #Menuline::before #MenuIcon:hover {
-  width: 50px;
-}
-#MenuIcon #Menuline::after {
+#MenuLine::after {
   content: "";
   height: 4px;
   width: 40px;
@@ -47,9 +84,6 @@ body {
   position: absolute;
   margin-top: -10px;
   transition: all 0.3s;
-}
-#MenuIcon #Menuline::after #MenuIcon:hover {
-  width: 50px;
 }
 
 #MainMenu {
@@ -63,23 +97,34 @@ body {
   left: -300px;
   transition: all 0.5s ease-in-out;
 }
+#MainMenu #logo img {
+  height: 75px;
+  width: 75px;
+  background-image: url("../logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 #MainMenu ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
   font-family: arial;
-  color: white;
+  width: 100%;
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#MainMenu ul li {
+  width: 100%;
+}
 #MainMenu ul li:hover {
   cursor: pointer;
 }
-#MainMenu ul li:hover .line {
-  width: 180px;
+#MainMenu ul li:hover div:hover {
+  cursor: pointer;
 }
 
 #logo {
@@ -119,6 +164,12 @@ body {
 section {
   height: 10000px;
   overflow: scroll;
+}
+
+.collapsible-header, .collapsible-body, .collapsible, ul.collapsible > li {
+  border-right: 0px !important;
+  border-left: 0px !important;
+  box-shadow: 0px;
 }
 
 /*# sourceMappingURL=menu.css.map */

@@ -25,6 +25,23 @@ close_button.addEventListener('click',function(){
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    let coll = document.querySelectorAll('.collapsible');
+    let instanc = M.Collapsible.init(coll);
+    var instances = M.Carousel.init(elems);
+
+  });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.carousel');
+//     var instances = M.Carousel.init(elems);
+//   });
+// $(document).ready(function(){
+//     //Init Carousel
+//     // alert("hello");
+//     $('.carousel').carousel();
+// });
 
 
 
