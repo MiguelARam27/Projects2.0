@@ -1,0 +1,20 @@
+.circle{
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+
+
+.gall_container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    /* display:flex; */
+    /* align-items:flex-start;
+    justify-items: center; */
+    background:orange;
+    position: absolute;
+    right:1%;
+    top:5%;
+    height:80vh;
+    width:100%;
+}

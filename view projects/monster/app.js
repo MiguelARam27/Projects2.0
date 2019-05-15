@@ -14,6 +14,7 @@ new Vue({
             this.monsterHealth=100;
         },
         attack:function(){
+          
             this.monsterHealth-=this.calculateDamage(3,10);
             if(this.checkWin()){
                 return;
