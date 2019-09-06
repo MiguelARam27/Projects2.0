@@ -1,0 +1,61 @@
+
+
+@font-face {
+    font-family: 'FiraSans';
+    src: local('FiraSans'), url(../assets/FiraSans-Bold.otf) format('opentype');
+    
+  }
+
+
+
+.Top_container{
+    margin: 0 auto;
+    /* background:red; */
+    height:28vh;
+    width:60vw;
+    z-index: 2;
+    margin-top:1%;
+
+    display:flex;
+    justify-content: center;
+    flex-flow:column;
+    align-items: center;
+    /* align-items:flex-end; */
+
+}
+.Top_container .Logo_container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row;
+    width:100%;
+    height:50%;
+    /* background:blue; */
+}
+.Top_container .Logo_container .Logo_pic{
+    height:100%;
+    width:10%;
+    background-image: url(../assets/GratSee-HiResLogo-Vector-padded.png);
+    z-index: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.Top_container .Message{
+    justify-self: flex-end;
+}
+.Top_container .Logo_container span{
+    font-size: 60px;
+    vertical-align: center;
+    color:#FAFAFA;
+    text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;
+    font-weight: 400;
+    font-family: 'FiraSans';
+}
+
+.Top_container .Message h1{
+    color:#FAFAFA;
+    font-family: 'FiraSans';
+    text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;
+    font-size:38px;
+}

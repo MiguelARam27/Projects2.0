@@ -1,0 +1,7 @@
+.BoxContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:80vw;
+    height:80vw;
+    margin:0 auto;
+}
