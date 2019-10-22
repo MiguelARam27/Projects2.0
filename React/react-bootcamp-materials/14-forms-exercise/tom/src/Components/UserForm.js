@@ -48,7 +48,8 @@ export class UserForm extends Component {
         const values ={ firstName, lastName, email, occupation,city,bio};
         switch(step){
             case 1:
-            return(<FormUserDetails
+            return(
+                <FormUserDetails
                 nextStep={this.nextStep}
                 handleChange={this.handleChange}
                 values={values}

@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li, a, button {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.page .container {
+  height: 100%;
+  width: 100%;
+}
+.page .container nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  -webkit-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
+}
+.page .container nav ul {
+  background: #24252A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  width: 100%;
+  padding: 0;
+}
+.page .container nav ul .logo {
+  flex-basis: 45%;
+}
+.page .container nav ul li {
+  text-decoration: none;
+}
+.page .container nav ul li :hover {
+  color: blueviolet;
+}
+.page .container nav ul li a {
+  padding: 5px 5px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+.page .container .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/building.jpg");
+  max-width: 100%;
+  max-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page .container .top .name {
+  color: #edf0f1;
+  text-align: center;
+}
+.page .container .top .name h1 {
+  font-family: "Montserrat", sans-serif;
+}
+.page .container .top .name h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.page .container .about_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+  height: 85vh;
+  width: 100%;
+}
+.page .container .about_container .title {
+  overflow: hidden;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  flex-basis: 15%;
+  padding-top: 2%;
+}
+.page .container .about_container .title h1 {
+  color: black;
+  font-size: 34px;
+  font-family: "Sanchez", serif;
+}
+.page .container .about_container .title .bar {
+  height: 9px;
+  width: 9px;
+  background: #1a1aff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+.page .container .about_container .title .bar::before {
+  content: "";
+  width: 100px;
+  border-bottom: solid 2px #1a1aff;
+  position: absolute;
+  left: -110px;
+  top: 50%;
+  z-index: 1;
+}
+.page .container .about_container .title .bar::after {
+  content: "";
+  width: 100px;
+  border-bottom: solid 2px #1a1aff;
+  position: absolute;
+  right: -110px;
+  top: 50%;
+  z-index: 1;
+}
+.page .container .about_container .about {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  flex-basis: 70%;
+  width: 90%;
+}
+.page .container .about_container .about .info {
+  flex-basis: 55%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  text-align: left;
+  padding-left: 25px;
+}
+.page .container .about_container .about .info p {
+  font-size: 16px;
+  font-family: "Source Sans Pro", Tahoma, Arial, sans-serif;
+}
+.page .container .about_container .about .pic {
+  flex-basis: 40%;
+  background-image: url("../assets/Artega.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 50px;
+}
+.page .container .services {
+  height: 285vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+  background: #f9fafc;
+}
+.page .container .services .title {
+  overflow: hidden;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  flex-basis: 5%;
+  padding-top: 2%;
+}
+.page .container .services .title h1 {
+  color: black;
+  font-size: 28px;
+  font-family: "Sanchez", serif;
+}
+.page .container .services .title .bar {
+  height: 9px;
+  width: 9px;
+  background: #1a1aff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+.page .container .services .title .bar::before {
+  content: "";
+  width: 100px;
+  border-bottom: solid 2px #1a1aff;
+  position: absolute;
+  left: -110px;
+  top: 50%;
+  z-index: 1;
+}
+.page .container .services .title .bar::after {
+  content: "";
+  width: 100px;
+  border-bottom: solid 2px #1a1aff;
+  position: absolute;
+  right: -110px;
+  top: 50%;
+  z-index: 1;
+}
+.page .container .services .service_container {
+  flex-basis: 80%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 7.5px;
+}
+.page .container .services .service_container .info_card {
+  max-height: 90%;
+  width: 95%;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.page .container .services .service_container .info_card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.page .container .services .service_container .info_card .info {
+  padding: 10px;
+}
+.page .container .services .service_container .info_card .info h1 {
+  font-size: 18px;
+  text-align: center;
+  padding: 8px 5px;
+  font-family: "Raleway", "sans-serif";
+}
+.page .container .services .service_container .info_card .info p {
+  text-align: start;
+  font-family: "Source Sans Pro", Tahoma, Arial, sans-serif;
+  font-size: 14px;
+}
+.page .container footer {
+  background: #24252A;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column;
+}
+.page .container footer .msg {
+  height: 100%;
+  text-align: center;
+  flex-basis: 20%;
+}
+.page .container footer .msg h5 {
+  font-size: 1rem;
+  color: #edf0f1;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.page .container footer .msg h6 {
+  font-size: 0.8rem;
+  color: #edf0f1;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.page .container footer .social-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.page .container footer .social-container a {
+  font-size: 3rem;
+  color: #8e8f91;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  padding: 10px;
+}
+.page .container footer .social-container a:hover {
+  color: #ff3535;
+}
+
+/*# sourceMappingURL=index.css.map */
