@@ -1,0 +1,162 @@
+.Resume {
+  height: auto;
+  width: 100%;
+  background-color: antiquewhite;
+}
+.Resume .Resume_grid {
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  background-color: beige;
+  justify-content: space-around;
+}
+.Resume .Resume_grid .proj {
+  flex-basis: 32%;
+  height: 100%;
+  width: auto;
+}
+.Resume .Resume_grid .proj .title {
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #1b61e4;
+}
+.Resume .Resume_grid .proj .title h1 {
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Resume .Resume_grid .positions .professional {
+  padding-bottom: 5px;
+}
+.Resume .Resume_grid .positions .professional .table_title {
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #3271e7;
+}
+.Resume .Resume_grid .positions .professional .table_title h1 {
+  font-size: 24px;
+}
+.Resume .Resume_grid .positions .professional .table_cell .job_name {
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+  color: #4881ea;
+}
+.Resume .Resume_grid .positions .professional .table_cell .job_name h2 {
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 900;
+}
+.Resume .Resume_grid .positions .professional .table_cell .job_info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+}
+.Resume .Resume_grid .positions .professional .table_cell .job_info span {
+  padding: 3px 0;
+}
+.Resume .Resume_grid .positions .professional .table_cell .job_info .job_title {
+  font-size: 14px;
+}
+.Resume .Resume_grid .positions .professional .table_cell .job_info .job_year {
+  text-align: left;
+}
+.Resume .Resume_grid .awards .professional {
+  padding-bottom: 5px;
+}
+.Resume .Resume_grid .awards .professional .table_title {
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #3271e7;
+}
+.Resume .Resume_grid .awards .professional .table_title h1 {
+  font-size: 24px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Resume .Resume_grid .awards .professional .table_cell .job_name {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  color: #4881ea;
+}
+.Resume .Resume_grid .awards .professional .table_cell .job_name h2 {
+  font-size: 16px;
+  font-weight: 900;
+}
+.Resume .Resume_grid .awards .professional .table_cell .job_info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+}
+.Resume .Resume_grid .awards .professional .table_cell .job_info span {
+  padding: 3px 0;
+}
+.Resume .Resume_grid .awards .professional .table_cell .job_info .job_title {
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+}
+.Resume .Resume_grid .awards .professional .table_cell .job_info .job_year {
+  text-align: left;
+  font-size: 14px;
+}
+.Resume .Resume_grid .certifications .professional {
+  padding-bottom: 5px;
+}
+.Resume .Resume_grid .certifications .professional .table_title {
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #3271e7;
+}
+.Resume .Resume_grid .certifications .professional .table_title h1 {
+  font-size: 24px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Resume .Resume_grid .certifications .professional .table_cell .job_name {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  color: #4881ea;
+}
+.Resume .Resume_grid .certifications .professional .table_cell .job_name h2 {
+  font-size: 16px;
+  font-weight: 900;
+}
+.Resume .Resume_grid .certifications .professional .table_cell .job_info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+}
+.Resume .Resume_grid .certifications .professional .table_cell .job_info span {
+  padding: 3px 0;
+}
+.Resume .Resume_grid .certifications .professional .table_cell .job_info .job_title {
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+}
+.Resume .Resume_grid .certifications .professional .table_cell .job_info .job_year {
+  text-align: left;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=project.css.map */

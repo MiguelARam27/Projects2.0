@@ -1,0 +1,261 @@
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  -webkit-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
+}
+nav ul {
+  background: #24252A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  width: 100%;
+  padding: 0;
+}
+nav ul .logo {
+  flex-basis: 45%;
+}
+nav ul li {
+  text-decoration: none;
+}
+nav ul li :hover {
+  color: blueviolet;
+}
+nav ul li a {
+  padding: 5px 5px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.portfolio_container {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2%;
+}
+.portfolio_container .title {
+  overflow: hidden;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  flex-basis: 15%;
+  padding-top: 2%;
+}
+.portfolio_container .title h1 {
+  color: black;
+  font-size: 34px;
+  font-family: "Sanchez", serif;
+}
+.portfolio_container .title .bar {
+  height: 9px;
+  width: 9px;
+  background: #1a1aff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+.portfolio_container .title .bar::before {
+  content: "";
+  width: 100px;
+  border-bottom: solid 2px #1a1aff;
+  position: absolute;
+  left: -110px;
+  top: 50%;
+  z-index: 1;
+}
+.portfolio_container .title .bar::after {
+  content: "";
+  width: 100px;
+  border-bottom: solid 2px #1a1aff;
+  position: absolute;
+  right: -110px;
+  top: 50%;
+  z-index: 1;
+}
+.portfolio_container .portfolio_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+.portfolio_container .portfolio_grid .portfolio_card {
+  height: 350px;
+  width: 385px;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.portfolio_container .portfolio_grid .portfolio_card .card_title {
+  flex-basis: 18%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio_container .portfolio_grid .portfolio_card .card_title h1 {
+  font-size: 16px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-family: "Sanchez", serif;
+}
+.portfolio_container .portfolio_grid .portfolio_card .icons {
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-basis: 10%;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 100%;
+}
+.portfolio_container .portfolio_grid .portfolio_card .icons span {
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  flex-basis: 50%;
+}
+.portfolio_container .portfolio_grid .portfolio_card .img {
+  flex-basis: 70%;
+  height: 100%;
+  width: 100%;
+  transition: all 1s ease-in-out 0s;
+}
+.portfolio_container .portfolio_grid .portfolio_card .img1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/miami.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.portfolio_container .portfolio_grid .portfolio_card .img2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/South_Orlando.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.portfolio_container .portfolio_grid .portfolio_card .img3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/plant1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.portfolio_container .portfolio_grid .portfolio_card .img4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/Weston.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.portfolio_container .portfolio_grid .portfolio_card .img5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/transport.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.portfolio_container .portfolio_grid .portfolio_card .img6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/Bolivia.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.portfolio_container .portfolio_grid .portfolio_card:hover {
+  cursor: pointer;
+}
+.portfolio_container .portfolio_grid .portfolio_card:hover .img1 {
+  background: url("../assets/miami.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.portfolio_container .portfolio_grid .portfolio_card:hover .img2 {
+  background: url("../assets/South_Orlando.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.portfolio_container .portfolio_grid .portfolio_card:hover .img3 {
+  background: url("../assets/plant1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.portfolio_container .portfolio_grid .portfolio_card:hover .img4 {
+  background: url("../assets/Weston.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.portfolio_container .portfolio_grid .portfolio_card:hover .img5 {
+  background: url("../assets/transport.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.portfolio_container .portfolio_grid .portfolio_card:hover .img6 {
+  background: url("../assets/Bolivia.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background: #24252A;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column;
+}
+footer .msg {
+  height: 100%;
+  text-align: center;
+  flex-basis: 20%;
+}
+footer .msg h5 {
+  font-size: 1rem;
+  color: #edf0f1;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+footer .msg h6 {
+  font-size: 0.8rem;
+  color: #edf0f1;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+footer .social-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+footer .social-container a {
+  font-size: 3rem;
+  color: #8e8f91;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  padding: 10px;
+}
+footer .social-container a:hover {
+  color: #ff3535;
+}
+
+/*# sourceMappingURL=portfolio.css.map */

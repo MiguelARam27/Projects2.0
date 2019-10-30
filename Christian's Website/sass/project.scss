@@ -1,0 +1,260 @@
+
+
+.Resume{
+    height:auto;
+    width:100%;
+    background-color: antiquewhite;
+
+
+    .Resume_grid{
+        display:flex;
+        height:auto;
+        width:100%;
+        margin: 0 auto;
+        background-color: beige;
+        justify-content: space-around;
+        
+
+        .proj{
+            flex-basis: 32%;
+            height:100%;
+            width:auto;
+            // background-color:orange;
+
+            .title {
+                text-align: center;
+                width: 100%;
+                padding-top:5px;
+                padding-bottom: 5px;
+                // color:#4881ea;
+                // color:#3271e7;
+                color: #1b61e4;
+
+              
+                h1{
+                    font-size: 36px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+
+        .positions{
+
+         
+
+            .professional{
+                padding-bottom: 5px;
+
+                .table_title{
+                    text-align: center;
+                    width: 100%;
+                    padding-top:5px;
+                    padding-bottom:5px;
+                    color:#3271e7;
+
+                    h1{
+                        font-size: 24px;
+                    }
+
+                }
+                .table_cell{
+                    
+
+                   .job_name{
+                       margin:0 auto;
+                       text-align: left;
+                       width: 100%;
+                       color:#4881ea;
+                    h2{
+                        padding-left: 15px;
+                        font-size:18px;
+                        font-weight: 900;
+                    }
+                   }
+                   .job_info{
+                    display:flex;
+                    flex-flow: column;
+                    align-items: center;
+                    justify-content: center;
+                    justify-items: center;
+                    align-content: center;
+                    
+                    span{
+                        padding: 3px 0;
+                    }
+                    .job_title{
+                        font-size: 14px;
+
+                    }
+                    .job_year{
+                        text-align: left;
+                    
+                    }
+                    
+                   }
+
+                }
+            
+            }
+
+
+
+        }
+
+        .awards{
+
+           
+
+            .professional{
+                padding-bottom: 5px;
+
+                .table_title{
+                    text-align: center;
+                    width: 100%;
+                    padding-top:5px;
+                    padding-bottom:5px;
+                    color:#3271e7;
+
+                    h1{
+                        font-size: 24px;
+                        text-align: center;
+                        // background-color: yellow;
+                        // font-family: "Montserrat",sans-serif;
+                        font-family:Arial, Helvetica, sans-serif;
+                    }
+                    // h2{
+                    //     font-family:Arial, Helvetica, sans-serif;
+                    // }
+
+                }
+                .table_cell{
+                    
+
+                   .job_name{
+                       margin:0 auto;
+                       text-align: center;
+                       width: 100%;
+                       color:#4881ea;
+                    //    background-color: yellow;
+                    h2{
+                        
+                        font-size:16px;
+                        font-weight: 900;
+                    }
+                   }
+                   .job_info{
+                    display:flex;
+                    flex-flow: column;
+                    align-items: center;
+                    justify-content: center;
+                    justify-items: center;
+                    align-content: center;
+                    
+                    span{
+                        padding: 3px 0;
+                    }
+                    .job_title{
+                        font-size: 13px;
+                        width:100%;
+                        // background-color: red;
+                        text-align: center;
+
+                    }
+                    .job_year{
+                        text-align: left;
+                        font-size:14px;
+                    
+                    }
+                    
+                   }
+
+                }
+            
+            }
+
+
+
+        }
+
+
+
+
+        .certifications{
+
+           
+
+            .professional{
+                padding-bottom: 5px;
+
+                .table_title{
+                    text-align: center;
+                    width: 100%;
+                    padding-top:5px;
+                    padding-bottom:5px;
+                    color:#3271e7;
+
+                    h1{
+                        font-size: 24px;
+                        text-align: center;
+                        // background-color: yellow;
+                        // font-family: "Montserrat",sans-serif;
+                        font-family:Arial, Helvetica, sans-serif;
+                    }
+                    // h2{
+                    //     font-family:Arial, Helvetica, sans-serif;
+                    // }
+
+                }
+                .table_cell{
+                    
+
+                   .job_name{
+                       margin:0 auto;
+                       text-align: center;
+                       width: 100%;
+                       color:#4881ea;
+                    //    background-color: yellow;
+                    h2{
+                        
+                        font-size:16px;
+                        font-weight: 900;
+                    }
+                   }
+                   .job_info{
+                    display:flex;
+                    flex-flow: column;
+                    align-items: center;
+                    justify-content: center;
+                    justify-items: center;
+                    align-content: center;
+                    
+                    span{
+                        padding: 3px 0;
+                    }
+                    .job_title{
+                        font-size: 13px;
+                        width:100%;
+                        // background-color: red;
+                        text-align: center;
+
+                    }
+                    .job_year{
+                        text-align: left;
+                        font-size:14px;
+                    
+                    }
+                    
+                   }
+
+                }
+            }
+        }
+        
+
+    
+
+           
+
+            
+    }
+}

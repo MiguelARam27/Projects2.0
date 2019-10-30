@@ -1,0 +1,354 @@
+nav{
+    height:10vh;
+    width:100%;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color:#edf0f1;
+    -webkit-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.75);
+    ul{
+    background:#24252A;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:auto;
+    width:100%;
+    padding:0;
+        
+    .logo{
+        flex-basis: 45%;
+    }
+        li{
+
+            // color:whitesmoke;
+            text-decoration: none;
+            :hover{
+                color:blueviolet;
+            }
+           
+            a{
+                padding: 5px 5px;
+                text-decoration: none;
+                transition: all .3s ease 0s;
+                
+            }
+        }
+    }
+}
+
+
+.portfolio_container{
+    width:100%;
+    height:auto;
+    padding-bottom: 2%;
+
+    .title{
+        // background-color:blue;
+        overflow: hidden;
+        height:15vh;
+        display:flex;
+        align-items: center;
+        flex-flow:column;
+        flex-basis: 15%;
+        padding-top:2%;
+    
+        
+        
+
+            h1{
+                color:black;
+                font-size: 34px;
+                font-family:"Sanchez", serif;
+            }
+            .bar{
+                height: 9px;
+                width: 9px;
+                background: #1a1aff;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                position:relative;
+               
+
+                &::before{
+                    content: '';
+                    width: 100px;
+                    border-bottom: solid 2px #1a1aff;
+                    position: absolute;
+                    left: -110px;
+                    top: 50%;
+                    z-index: 1;
+                }
+                &::after{
+                    content: '';
+                    width: 100px;
+                    border-bottom: solid 2px #1a1aff;
+                    position: absolute;
+                    right: -110px;
+                    top: 50%;
+                    z-index: 1;
+                }
+            }
+    }
+
+    .portfolio_grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        // grid-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: center;
+
+
+        .portfolio_card{
+            height:350px;
+            width:385px;
+            display: flex;
+            flex-flow: column;
+            // justify-content: space-between;
+            align-content: center;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            
+
+            .card_title{
+                
+                flex-basis:18%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                
+            
+                h1{
+                    font-size:16px;
+                    padding-right: 4px;
+                    padding-left: 4px;
+                    font-family:"Sanchez", serif;
+                }
+            }
+
+            .icons{
+                display:flex;
+                // grid-template-columns: 1fr 1fr;
+                // align-items: center;
+                // justify-items: center;
+                flex-flow: row;
+                align-content: center;
+                justify-content: space-between;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                flex-basis: 10%;
+                text-align: center;
+                padding-right:5px;
+                padding-left:5px;
+                width:100%;
+                
+                span{
+                    font-size: 17px;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    
+                    flex-basis: 50%;
+                }
+            }
+
+              
+            .img{
+                flex-basis: 70%;
+                height:100%;
+                width: 100%;
+                transition: all 1s ease-in-out 0s;
+                
+            }
+
+                .img1{
+                    background:  linear-gradient(
+                        rgba(0, 0, 0, 0.4),
+                        rgba(0, 0, 0, 0.4)
+                      ),
+                      url('../assets/miami.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                }
+
+                .img2{
+                    background:  linear-gradient(
+                        rgba(0, 0, 0, 0.4),
+                        rgba(0, 0, 0, 0.4)
+                      ),
+                      url('../assets/South_Orlando.png');
+                      background-size: cover;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                }
+                .img3{
+                    background:  linear-gradient(
+                        rgba(0, 0, 0, 0.4),
+                        rgba(0, 0, 0, 0.4)
+                      ),
+                      url('../assets/plant1.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                }
+                .img4{
+                    background:  linear-gradient(
+                        rgba(0, 0, 0, 0.4),
+                        rgba(0, 0, 0, 0.4)
+                      ),
+                      url('../assets/Weston.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                }
+                .img5{
+                    background:  linear-gradient(
+                        rgba(0, 0, 0, 0.4),
+                        rgba(0, 0, 0, 0.4)
+                      ),
+                      url('../assets/transport.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                }
+                .img6{
+                    background:  linear-gradient(
+                        rgba(0, 0, 0, 0.4),
+                        rgba(0, 0, 0, 0.4)
+                      ),
+                      url('../assets/Bolivia.png');
+                      background-size: cover;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                    
+                    
+                    .img1{
+                        background: url("../assets/miami.jpg");
+                        background-size: cover;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        
+                    }
+                    .img2{
+                      background: url("../assets/South_Orlando.png");
+                      background-size: cover;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                  }
+                  .img3{
+                      background: url("../assets/plant1.jpg");
+                      background-size: cover;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                  }
+                  .img4{
+                      background: url("../assets/Weston.jpg");
+                      background-size: cover;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                  }
+                  .img5{
+                      background: url("../assets/transport.jpg");
+                      background-size: cover;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                  }
+                  .img6{
+                      background: url("../assets/Bolivia.png");
+                      background-size: cover;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                  }
+                    
+                }
+                 
+            }
+          
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background:#24252A;
+    height:20vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow:column;
+
+
+    .msg{
+      height:100%;
+      text-align: center;
+      flex-basis: 20%;
+     
+       h5{
+        font-size: 1rem;
+        color: #edf0f1;
+        text-transform: uppercase;
+        text-align: center;
+        // margin: 20px 0;
+        font-family: "Montserrat",sans-serif;
+      }
+      h6{
+        font-size: .8rem;
+        color: #edf0f1;
+        text-transform: capitalize;
+        text-align: center;
+        font-family: "Montserrat",sans-serif;
+      }
+
+
+      
+    }
+
+    
+    .social-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      max-width: 400px;
+      margin: 0 auto;
+
+     
+
+      a{
+        font-size: 3rem;
+        color: #8e8f91;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+        display: inline-block;
+        padding: 10px;
+        
+        &:hover{
+          color: rgba(255,53,53,1);
+        }
+      }
+    }
+  }
+  
