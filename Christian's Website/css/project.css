@@ -1,162 +1,183 @@
-.Resume {
-  height: auto;
-  width: 100%;
-  background-color: antiquewhite;
+body {
+  background-color: whitesmoke;
 }
-.Resume .Resume_grid {
-  display: flex;
+
+.project_container {
+  width: 100%;
   height: auto;
+  background-color: whitesmoke;
+}
+.project_container .title {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2.5%;
+}
+.project_container .title h1 {
+  font-size: 34px;
+  font-weight: 2.5;
+}
+.project_container .project_photo {
+  height: 400px;
   width: 100%;
   margin: 0 auto;
-  background-color: beige;
-  justify-content: space-around;
+  background: url("../assets/miami.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
 }
-.Resume .Resume_grid .proj {
-  flex-basis: 32%;
-  height: 100%;
-  width: auto;
-}
-.Resume .Resume_grid .proj .title {
-  text-align: center;
+.project_container .project_info_container {
+  height: 700px;
   width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  display: flex;
+  flex-basis: row;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+.project_container .project_info_container .info h1 {
+  font-family: "Montserrat,sans-serif";
   color: #1b61e4;
 }
-.Resume .Resume_grid .proj .title h1 {
-  font-size: 36px;
-  font-family: Arial, Helvetica, sans-serif;
+.project_container .project_info_container .info p {
+  font-family: "Arial, Helvetica, sans-serif";
 }
-.Resume .Resume_grid .positions .professional {
-  padding-bottom: 5px;
+.project_container .project_info_container .info1 {
+  flex-basis: 25% !important;
 }
-.Resume .Resume_grid .positions .professional .table_title {
-  text-align: center;
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #3271e7;
+.project_container .project_info_container .info1 .cat1 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
 }
-.Resume .Resume_grid .positions .professional .table_title h1 {
-  font-size: 24px;
+.project_container .project_info_container .info1 .cat1 .info_box {
+  width: 80%;
 }
-.Resume .Resume_grid .positions .professional .table_cell .job_name {
-  margin: 0 auto;
-  text-align: left;
-  width: 100%;
-  color: #4881ea;
+.project_container .project_info_container .info1 .cat1 .info_box h1 {
+  font-size: 22px;
+  font-family: "Montserrat,sans-serif";
 }
-.Resume .Resume_grid .positions .professional .table_cell .job_name h2 {
-  padding-left: 15px;
+.project_container .project_info_container .info1 .cat1 .info_box p {
   font-size: 18px;
-  font-weight: 900;
 }
-.Resume .Resume_grid .positions .professional .table_cell .job_info {
+.project_container .project_info_container .info2 {
+  flex-basis: 35%;
+}
+.project_container .project_info_container .info2 .cat2 {
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
+  height: 100%;
 }
-.Resume .Resume_grid .positions .professional .table_cell .job_info span {
-  padding: 3px 0;
-}
-.Resume .Resume_grid .positions .professional .table_cell .job_info .job_title {
-  font-size: 14px;
-}
-.Resume .Resume_grid .positions .professional .table_cell .job_info .job_year {
-  text-align: left;
-}
-.Resume .Resume_grid .awards .professional {
-  padding-bottom: 5px;
-}
-.Resume .Resume_grid .awards .professional .table_title {
-  text-align: center;
+.project_container .project_info_container .info2 .cat2 .info_box {
   width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #3271e7;
 }
-.Resume .Resume_grid .awards .professional .table_title h1 {
+.project_container .project_info_container .info2 .cat2 .info_box h1 {
   font-size: 24px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1%;
 }
-.Resume .Resume_grid .awards .professional .table_cell .job_name {
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  color: #4881ea;
+.project_container .project_info_container .info2 .cat2 .info_box p {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
 }
-.Resume .Resume_grid .awards .professional .table_cell .job_name h2 {
-  font-size: 16px;
-  font-weight: 900;
+.project_container .project_info_container .info2 .cat2 .info_box2 {
+  margin-bottom: 5%;
 }
-.Resume .Resume_grid .awards .professional .table_cell .job_info {
+.project_container .project_info_container .info3 {
+  flex-basis: 35%;
+}
+.project_container .project_info_container .info3 .cat3 {
+  height: 100%;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
+  justify-content: space-between;
 }
-.Resume .Resume_grid .awards .professional .table_cell .job_info span {
-  padding: 3px 0;
-}
-.Resume .Resume_grid .awards .professional .table_cell .job_info .job_title {
-  font-size: 13px;
+.project_container .project_info_container .info3 .cat3 .info_box {
+  flex-basis: 10%;
   width: 100%;
   text-align: center;
 }
-.Resume .Resume_grid .awards .professional .table_cell .job_info .job_year {
-  text-align: left;
-  font-size: 14px;
-}
-.Resume .Resume_grid .certifications .professional {
-  padding-bottom: 5px;
-}
-.Resume .Resume_grid .certifications .professional .table_title {
-  text-align: center;
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #3271e7;
-}
-.Resume .Resume_grid .certifications .professional .table_title h1 {
+.project_container .project_info_container .info3 .cat3 .info_box h1 {
   font-size: 24px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
 }
-.Resume .Resume_grid .certifications .professional .table_cell .job_name {
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  color: #4881ea;
-}
-.Resume .Resume_grid .certifications .professional .table_cell .job_name h2 {
-  font-size: 16px;
-  font-weight: 900;
-}
-.Resume .Resume_grid .certifications .professional .table_cell .job_info {
+.project_container .project_info_container .info3 .cat3 .info_box_award_container {
+  flex-basis: 85%;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-}
-.Resume .Resume_grid .certifications .professional .table_cell .job_info span {
-  padding: 3px 0;
-}
-.Resume .Resume_grid .certifications .professional .table_cell .job_info .job_title {
-  font-size: 13px;
+  justify-content: space-between;
+  height: 100%;
   width: 100%;
-  text-align: center;
+  margin: 0 auto;
 }
-.Resume .Resume_grid .certifications .professional .table_cell .job_info .job_year {
+.project_container .project_info_container .info3 .cat3 .info_box_award_container .info_box_award {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.project_container .project_info_container .info3 .cat3 .info_box_award_container .info_box_award span {
+  flex-basis: 20%;
+  text-align: center;
+  justify-items: center;
+}
+.project_container .project_info_container .info3 .cat3 .info_box_award_container .info_box_award .award {
+  flex-basis: 80%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.project_container .project_info_container .info3 .cat3 .info_box_award_container .info_box_award .award p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Arial, Helvetica, sans-serif";
+}
+.project_container .project_info_container .info3 .cat3 .info_box_award_container .info_box_award .award span {
   text-align: left;
-  font-size: 14px;
+}
+
+.responsibility {
+  background-color: #c6d4ee;
+  height: 120px;
+  width: 80%;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+.responsibility .decleration {
+  flex-basis: 38%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+.responsibility .decleration h1 {
+  font-size: 1.3rem;
+  font-family: "Montserrat,sans-serif";
+  color: #1b61e4;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1%;
+}
+.responsibility .signature {
+  flex-basis: 45%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.responsibility .signature h1 {
+  font-size: 1.3rem;
+  font-family: "Montserrat,sans-serif";
+  text-align: center;
+  margin-bottom: 1%;
+  line-height: 100% !important;
+  margin-top: 0 !important;
+}
+.responsibility .signature p {
+  font-size: 18px;
+  font-family: "Arial, Helvetica, sans-serif";
 }
 
 /*# sourceMappingURL=project.css.map */
