@@ -10,6 +10,7 @@ class Post(models.Model):
     content = models.TextField()
     published = models.BooleanField(default=True)
     created = models.DateField(auto_now_add=True)
+    image = models.ImageField(upload_to='img',default='default.png')
     def _str_(self):
             return u'%s'%self.title
 
