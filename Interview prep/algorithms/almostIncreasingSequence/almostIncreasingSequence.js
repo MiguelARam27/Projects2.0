@@ -29,18 +29,18 @@ let almostIncreasingSequence = (arr) =>{
     let counter = 0;
     for (let index = 0; index < arr.length; index++) {
         console.log(counter)
-        if(arr[index+1]-arr[index]===1){
-            counter++;
-            
+        if(arr[index+2]-arr[index]===1){
+            counter++;  
         }else{
             counter--;
         }
-        
+        console.log(counter)
     }
     
 
-    return counter === 0? false:true
+    return counter >= 1
 
 }
 
-console.log(almostIncreasingSequence([1, 3, 2, 1]));
+// console.log(almostIncreasingSequence([1, 3, 2, 1]));
+console.log(almostIncreasingSequence([1, 3, 2]));
