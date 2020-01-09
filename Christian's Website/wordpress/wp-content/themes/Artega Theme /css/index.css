@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Sanchez&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
+@import url("../css/nav.css");
+@import url("../css/page.css");
+@import url("../css/footer.css");
 * {
   margin: 0;
   padding: 0;

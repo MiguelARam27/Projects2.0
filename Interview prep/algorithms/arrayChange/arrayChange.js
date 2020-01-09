@@ -24,16 +24,21 @@ const arrayChange = (arr) =>{
     for (let index = 0; index < arr.length; index++) {
         if(arr[index] == arr[index+1]){
             distance = 1;
-            counter+=distance;
-            arr[index+1]+=1;
+            counter += distance;
+            arr[index+1] += 1;
+            counter
         }else if(arr[index]>arr[index+1]){
-            arr[index+1]=arr[index]+1;
+            distance = arr[index+1];
+            arr[index+1] = arr[index]+1;
+            distance = arr[index+1]-distance;
+            counter += distance
+            
         }
 
 
     }
 
-    return arr
+    return counter
 }
 
 console.log(arrayChange([1,1,1]))

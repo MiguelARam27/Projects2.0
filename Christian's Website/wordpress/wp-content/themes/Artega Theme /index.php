@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-   
 
-  <link rel="stylesheet" href="<?php echo 
-    get_bloginfo('template_directory');?>/css/index.css">
-
-
-
-    <title>Documents</title>
-<body>
+  <?php include 'header.php' ?>
+<body <?php body_class(); ?> >
 <div class="page">
             <div class="container">
-                    <nav>   
-                        <ul>
-                            <li class="logo"><a href="#">Logo</a></li>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="#">Resume</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
+                    
+                    <?php 
+                  
+                       include 'nav.php'
+                    ?>
                     <div class="top">
                         <div class="name">
-                            <h1>Juan Carlos Arteaga</h1>
-                            <hr>
-                            <h2>Associate vice President & Senior Director at HNTB Corp.</h2>
+                        <?php 
+                        $mypod = pods('picname');
+                        $mypod->find('name ASC');
+                        
+                      ?>
+                      <?php  while($mypod->fetch()):?>
+                          <?php 
+                          $name = $mypod->field('name');
+                          $content =$mypod->field('content');
+                          ?>
+                        <h1><?php echo $name?></h1>
+                        <hr>
+                        <h2><?php echo $content?></h2>
+                      <?php endwhile;?>
                         </div>
                     </div>
                     <div class="about_container">
+                    <?php 
+                        $mypod = pods('picname');
+                        $mypod->find('name ASC');
+                        
+                      ?>
+                      <?php  while($mypod->fetch()):?>
+                          <?php 
+                          $name = $mypod->field('name');
+                          $content =$mypod->field('content');
+                          ?>
+                        <h1><?php echo $name?></h1>
+                        <hr>
+                        <h2><?php echo $content?></h2>
+                      <?php endwhile;?>
                         <div class="title">
                             <h1>About Me</h1>
                             <span class="bar"></span>
@@ -173,30 +185,10 @@
                                     </div>
                                   </div>
                             </section>
-                            
-                            <footer>
-                                <div class="msg">
-                                    <h5>Juan Carlos Arteaga</h5>
-                                    <h6>Follow me on other platforms</h6>
-                                  </div>
-                                <div class="social-container">
-                                  <a href="http://www.facebook.com/">
-                                    <i class="fab fa-facebook"></i>
-                                  </a>
-                                  <a href="http://www.dribbble.com/">
-                                    <i class="fab fa-dribbble"></i>
-                                  </a>
-                                  <a href="http://www.facebook.com/">
-                                    <i class="fab fa-twitter"></i>
-                                  </a>
-                                  <a href="http://www.facebook.com/">
-                                    <i class="fab fa-instagram"></i>
-                                  </a>
-                                
-                                </div>
-                               
-                               
-                            </footer>
+                          <?php
+                             include 'footer.php'
+                          ?>
+                         
                 </div>
         </div>
   </div>

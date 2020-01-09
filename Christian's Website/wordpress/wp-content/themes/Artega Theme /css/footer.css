@@ -1,0 +1,47 @@
+ footer {
+    background: #24252A;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column;
+  }
+   footer .msg {
+    height: 100%;
+    text-align: center;
+    flex-basis: 20%;
+  }
+   footer .msg h5 {
+    font-size: 1rem;
+    color: #edf0f1;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+   footer .msg h6 {
+    font-size: 0.8rem;
+    color: #edf0f1;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  footer .social-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+ footer .social-container a {
+    font-size: 3rem;
+    color: #8e8f91;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    padding: 10px;
+  }
+ footer .social-container a:hover {
+    color: #ff3535;
+  }

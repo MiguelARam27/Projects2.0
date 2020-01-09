@@ -1,0 +1,11 @@
+#page-template{
+    padding:25px 0;
+    display: block;
+}
+
+#page-template .container{
+    padding:0 15px;
+    display: block;
+    background-color: red;
+    margin:0 auto;
+}
