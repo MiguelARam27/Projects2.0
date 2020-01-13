@@ -31,44 +31,43 @@
                     </div>
                     <div class="about_container">
                     <?php 
-                        $mypod = pods('picname');
+                        $mypod = pods('about_info');
                         $mypod->find('name ASC');
                         
                       ?>
                       <?php  while($mypod->fetch()):?>
                           <?php 
                           $name = $mypod->field('name');
-                          $content =$mypod->field('content');
+                          $paragraph1 =$mypod->field('paragraph1');
+                          $paragraph2 = $mypod->field('paragraph2');
+                          $paragraph3 = $mypod->field('paragraph3');
+                          $paragraph4 = $mypod->field('paragraph4');
                           ?>
-                        <h1><?php echo $name?></h1>
-                        <hr>
-                        <h2><?php echo $content?></h2>
-                      <?php endwhile;?>
+
                         <div class="title">
-                            <h1>About Me</h1>
+                            <h1><?php echo $name?></h1>
                             <span class="bar"></span>
                         </div>
                         <div class="about">
                             <div class="info">
                                 <p>
-                                    Juan Carlos (JC) Arteaga grew up in Bolivia, longing for permanence and stability. He found it in architecture — and learned early how smart, efficient, inspirational design makes a difference in society. His career began at age 17. Architecture has been his life’s passion ever since.
+                                  <?php echo $paragraph1?>
                                 </p>
                                 <p>
-                                    JC’s first efforts brought basic services — clean water, roads, sewage systems and safety features — to those most in need. With innovative thinking and clever decisions he provided the poorest citizens with vital infrastructure at a
-                                    low cost. Now his efforts in the United States are on a larger scale. His fresh approach to billion-dollar infrastructure has shifted thinking in how they are designed and delivered, encouraging efficiency that improves lives and strengthens cities.
+                                  <?php echo $paragraph2?>
                                 </p> 
                                 <p>
-                                    His formative years also showed him the power of design to inspire. Artists and sculptors find a fertile environment in his projects, from a Bolivian condominium to a billion-dollar airport in Miami.
+                                  <?php echo $paragraph3?>
                                 </p>
-                                <p>JC is a return to the idea of architect as master builder. He brings down the walls that separate disciplines, drawing on
-                                    his broad skill set — he’s also a certified building code official and certified general contractor — to anticipate
-                                    the evolution of the built process.
-                                    His mission is to ensure that architects remain central to the process no matter the delivery method.</p>
+                                <p><?php echo $paragraph4?></p>
                             </div>
                             <div class="pic">
                                
                             </div>
                         </div>
+                      <?php endwhile;?>
+                    
+                     
                     </div>
                     <!-- <section id="services" class="sec-services">
                       <div class="container">
