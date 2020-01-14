@@ -34,6 +34,8 @@
 
 # *args is used to pass a variable number of arguments to a functio. it is used to pass anon-keyworded, variable-length argument list
 
+#**kwargs is isued to pass a keyworded, variable-length argument dictionary to a function. 
+
 # Q: What is docstring in Python?
 
 # Q: What are the built-in type does python provides? Which are mutable which are immutable?
