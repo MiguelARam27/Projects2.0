@@ -1,0 +1,42 @@
+.section-about{
+    background-color: $color-grey-light;
+    padding:25rem 0;
+    margin-top: -20vh;
+   
+
+
+    .heading-secondary{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color:transparent;
+        display:inline-block;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        letter-spacing: 2px;
+        transition-property: all .2s;
+
+        &:hover{
+            
+            text-shadow: .5rem 1.2rem 1.2rem rgba($color-black, .2);
+        }
+       
+    }
+
+    .about-grid{
+        
+        display:grid;
+        grid-template-columns: 2fr 2fr;
+        justify-items: space-between;
+        grid-column-gap: 2rem;
+        width:80%;
+        margin:0 auto;
+
+
+        .about-info{
+           
+        }
+    }
+
+}
