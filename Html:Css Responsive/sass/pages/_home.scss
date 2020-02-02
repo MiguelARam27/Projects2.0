@@ -57,16 +57,105 @@
 
 .section-courses{
     background-color: $color-grey-light;
-    padding:25rem 0 50rem 0;
+    padding:25rem 0 18rem 0;
     margin-top: -10rem;
 
 
 
     .courses-grid{
-        padding: 0 10rem;
-        background-color: yellow;
+        padding: 0 5rem;
+        
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 2.5rem;
+        gap: 4rem;
     }
+}
+
+.section-stories{
+
+    padding:15rem 0;
+    
+    position: relative;
+
+    .stories-grid{
+        display: flex;
+        flex-flow:column;
+        justify-items: space-between;
+        justify-content: space-between;
+        align-items: center;
+
+    
+    .story{
+        width:75%;
+        // margin: 0 auto;
+        box-shadow: 0 3rem 6rem rgba($color-black, .1);
+        background-color: rgba($color-white,.60);
+        border-radius: 3px;
+        padding: 5rem;
+        font-size: $default-font-size;
+        transform: skewX(-12deg);
+        back
+
+        &>*{
+            transform: skewX(12deg);
+        }
+
+        &__shape{
+            width:15rem;
+            height:15rem;
+            float: left;
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+            transform: translateX(-3rem) skewX(12.01deg);
+            position: relative;
+            backface-visibility: hidden;
+        
+
+            img{
+                height: 100%;
+                transform: translateX(-4rem) scale(1.4);
+                backface-visibility: hidden;
+                transition: all .5s;
+                overflow: hidden;
+            }
+
+           
+
+          
+        }
+
+        .caption{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.7rem;
+            text-align: center;
+            transform: translate(-50%, 20%);
+            opacity: 0;
+            transition: all .5s;
+            backface-visibility: hidden;
+
+        }
+
+       &:hover {
+           .caption{
+            opacity: 1;
+            transform: translate(-50%, -50%);
+           }
+
+           img{
+            transform: translateX(-4rem) scale(1);
+            filter: blur(3px);
+           }
+        
+       }
+
+    }
+
+}
+
 }
