@@ -94,7 +94,7 @@
         padding: 5rem;
         font-size: $default-font-size;
         transform: skewX(-12deg);
-        back
+    
 
         &>*{
             transform: skewX(12deg);
@@ -158,4 +158,42 @@
 
 }
 
+}
+
+.book{
+    padding:17rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark);
+
+
+    &__container{
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+        
+
+    }
+
+    &__box{
+        background-image: linear-gradient(105deg,
+                    rgba($color-white,.9) 0%,
+                    rgba($color-white,.9) 50%,
+                    transparent 50%),
+                    url(../../img/nat-10.jpg);
+        background-size: cover;
+        height: 50rem;
+        width:100%;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+
+    }
+
+    &__form{
+        width: 50%;
+        padding:6rem;
+    }
 }
