@@ -1,0 +1,61 @@
+
+.footer{
+    position: relative;
+
+    padding:10rem 0;
+    background-color: $color-grey-dark-3;
+    font-size: 1.4rem;
+    &__logo-box{
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+
+    &__logo{
+        background-size: cover;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 13rem;
+    }
+
+
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__navigation{
+
+    }
+
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        display:inline-block;
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }  
+    
+    &__link{
+        &:link,
+        &:visited{
+            color:$color-grey-light;
+            text-decoration: none;
+            text-transform: uppercase;
+            display:inline-block;
+        }
+
+        &:hover{
+            color:$color-primary;
+
+        }
+
+
+    }
+}
