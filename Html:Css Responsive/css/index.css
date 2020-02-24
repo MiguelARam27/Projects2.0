@@ -1,3 +1,10 @@
+/*
+0-600 phone
+600-900 tablet in portrait
+900-1200 tablet in landscape
+1200-1800 normal styles
+1800+ big screens
+*/
 *,
 *::after,
 *::before {
@@ -9,9 +16,35 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
 
 body {
   box-sizing: border-box;
+  padding: 2.5rem 2.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body {
+    padding: 0;
+  }
 }
 
 @keyframes moveInLeft {
@@ -50,17 +83,51 @@ body {
     transform: translate(0);
   }
 }
-.heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: #777;
 }
 
-.paragraph {
-  font-size: 1.6rem;
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
 }
-.paragraph:not(:last-child) {
-  margin-bottom: 3rem;
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  /*
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+  */
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--main {
+    letter-spacing: 1rem;
+    font-family: 5rem;
+  }
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  animation: moveInRight 1s ease-out;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 0.5rem;
+    font-family: 5rem;
+  }
 }
 
 .heading-secondary {
@@ -74,14 +141,32 @@ body {
   letter-spacing: 0.2rem;
   transition: all 0.2s;
 }
+@media only screen and (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
 
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #777;
-  padding: 30px;
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
 }
 
 .u-center-text {
@@ -251,6 +336,18 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all 0.2s;
+  width: 22rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .feature-box {
+    width: 34rem;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .feature-box {
+    width: 18rem;
+  }
 }
 .feature-box i {
   font-size: 6rem;
@@ -270,6 +367,17 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .card {
+    margin: 0 auto;
+    width: 50rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .card {
+    width: 100%;
+  }
 }
 .card__side {
   height: 52rem;
@@ -561,65 +669,37 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.801)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
-.header .logo-box {
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+  }
+}
+@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+  .header {
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  }
+}
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-.header .logo-box .logo {
+.header__logo {
   height: 3.5rem;
 }
-.header .text-box {
+.header__text-box {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-.header .text-box .heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 45px;
-}
-.header .text-box .heading-primary .main {
-  letter-spacing: 35px;
-  display: block;
-  font-size: 60px;
-  font-weight: 400;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-}
-.header .text-box .heading-primary .secondary {
-  display: block;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 17.4px;
-  animation-name: moveInRight;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-}
-.header .text-box .btn-white {
-  background-color: white;
-  color: #777;
-  display: inline-block;
-}
-.header .text-box .btn-white::after {
-  background-color: white;
-}
-.header .text-box .btn-animated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
 }
 
 .footer {
@@ -671,6 +751,18 @@ body {
   padding: 25rem 0;
   margin-top: -20vh;
 }
+@media only screen and (max-width: 56.25em) {
+  .section-about {
+    padding-top: 20rem;
+    padding-bottom: 70rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section-about {
+    padding-top: 20rem;
+    padding-bottom: 50rem;
+  }
+}
 .section-about .heading-secondary:hover {
   text-shadow: 0.5rem 1.2rem 1.2rem rgba(0, 0, 0, 0.2);
 }
@@ -681,6 +773,18 @@ body {
   grid-column-gap: 2rem;
   width: 80%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-about .about-grid {
+    grid-template-columns: 1fr;
+    width: 70%;
+    gap: 10rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section-about .about-grid {
+    gap: 10rem;
+  }
 }
 
 .section-features {
@@ -698,6 +802,19 @@ body {
   grid-template-columns: 0.6fr 0.6fr 0.6fr 0.6fr;
   gap: 3.5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .section-features .feature-grid {
+    width: 70%;
+    margin: 0 auto;
+    grid-template-columns: 1.2fr;
+    gap: 8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section-features .feature-grid {
+    width: 100%;
+  }
+}
 
 .section-courses {
   background-color: #f7f7f7;
@@ -710,7 +827,13 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4rem;
 }
-
+@media only screen and (max-width: 56.25em) {
+  .section-courses .courses-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+}
 .section-stories {
   padding: 15rem 0;
   position: relative;
@@ -795,53 +918,24 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
+@media only screen and (max-width: 56.25em) {
+  .book__box {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../../img/nat-10.jpg);
+  }
+}
 .book__form {
   width: 50%;
   padding: 6rem;
 }
-
+@media only screen and (max-width: 56.25em) {
+  .book__form {
+    width: 100%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 15px 40px;
-  border-radius: 100px;
-  transition: all 0.2s;
-  position: relative;
-}
-.btn:link::after,
-.btn:visited::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-.btn:link:hover,
-.btn:visited:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.btn:link:active,
-.btn:visited:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=index.css.map */

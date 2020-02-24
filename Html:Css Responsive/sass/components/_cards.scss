@@ -4,6 +4,16 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
+    @include respond(tab-port){
+       margin: 0 auto;
+       width: 50rem;
+     }
+     @include respond(phone){
+         width: 100%;
+         
+        
+     }
+    
    
    
     // FUNCTIONALITY

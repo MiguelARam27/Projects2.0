@@ -6,6 +6,16 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
     transition: all .2s;
+    width: 22rem;
+
+    @include respond(tab-port){
+       width: 34rem;
+       margin: 0 auto;
+    }
+    @include respond(phone){
+        width: 18rem;
+       
+    }
 
 
     i{
