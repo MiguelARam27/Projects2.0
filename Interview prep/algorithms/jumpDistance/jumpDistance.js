@@ -1,47 +1,57 @@
+// You are given an array of integers representing coordinates of obstacles situated on a straight line.
 
-// One night you go for a ride on your motorcycle. At 00:00 you start your engine, and the built-in timer automatically begins counting the length of your ride, in minutes. Off you go to explore the neighborhood.
+// Assume that you are jumping from the point with coordinate 0 to the right. You are allowed only to make jumps of the same length represented by some integer.
 
-// When you finally decide to head back, you realize there's a chance the bridges on your route home are up, leaving you stranded! Unfortunately, you don't have your watch on you and don't know what time it is. All you know thanks to the bike's timer is that n minutes have passed since 00:00.
-
-// Using the bike's timer, calculate the current time. Return an answer as the sum of digits that the digital timer in the format hh:mm would show.
+// Find the minimal length of the jump enough to avoid all the obstacles.
 
 // Example
 
-// For n = 240, the output should be
-// lateRide(n) = 4.
+// For inputArray = [5, 3, 6, 7, 9], the output should be avoidObstacles(inputArray) = 4.
 
-// Since 240 minutes have passed, the current time is 04:00. The digits sum up to 0 + 4 + 0 + 0 = 4, which is the answer.
+// Check out the image below for better understanding:
 
-// For n = 808, the output should be
-// lateRide(n) = 14.
 
-// 808 minutes mean that it's 13:28 now, so the answer should be 1 + 3 + 2 + 8 = 14.
 
+// Hints
+
+// sort()
+// every()
 // Input/Output
 
-// [execution time limit] 4 seconds (js)
-
-// [input] integer n
-
-// The duration of your ride, in minutes. It is guaranteed that you've been riding for less than a day (24 hours).
+// [time limit] 4000ms (js)
+// [input] array.integer inputArray
+// Non-empty array of positive integers.
 
 // Guaranteed constraints:
-// 0 ≤ n < 60 · 24.
+
+// 2 ≤ inputArray.length ≤ 10,
+
+// 1 ≤ inputArray[i] ≤ 40.
 
 // [output] integer
-
-// The sum of the digits the digital timer would show
-
+// The desired length.
 
 let jumpDistance = (arr) => {
 
-arr.sort()
+    arr.sort();
+    let distance = arr[0]+1;
+    let check = 0;
+    let greatest_Val = arr[arr.length-1];
+    for (let index = 0; index < arr.length; index++) {
+        check+=distance;
+        if(distance==arr[index]){
+            return false;
+        }
+        
+    }
+    
+    
 
         
-    return arr
+    return  distance;
 }
 
-console.log(jumpDistance([1,4,5,8,6,4,5,3,2]))
+console.log(jumpDistance([5, 3, 6, 7, 9]))
 
 
 

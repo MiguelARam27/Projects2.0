@@ -66,18 +66,21 @@
         background-size: cover;
         height: 23rem;
         background-blend-mode: soft-light;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        clip-path: polygon(0 0,100% 0, 100% 85%, 0,100%);
+        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        // clip-path: polygon(0 0,100% 0, 100% 85%, 0,100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
 
         &-1{
-            background-image: linear-gradient(to right bottom,$color-secondary-light, $color-secondary-dark) ,url("../../img/nat-5.jpg");
+            background-image: linear-gradient(to right bottom,$color-secondary-light, $color-secondary-dark) ,url("https://optinmonster.com/wp-content/uploads/2019/09/blogging-statistics.png");
+            -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
+            
+            clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
         }
 
         &-2{
             
-            background-image: linear-gradient(to right bottom,$color-primary-light, $color-primary-dark) ,url("../../img/nat-6.jpg");
+            background-image: linear-gradient(to right bottom,$color-primary-light, $color-primary-dark) ,url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8-v4nFUeWNxNHvMz6JHtUv6uN-oovpr8okWW6Ua0mbwfUe-9o");
             -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
             
             clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
@@ -85,8 +88,9 @@
 
         &-3{
             background-image: linear-gradient(to right bottom,$color-tertiary-light, $color-tertiary-dark) ,url("../../img/nat-6.jpg");
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-            clip-path: polygon(0 0,100% 0,100% 100%, 0 85%);
+            -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
+            
+            clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
     
         }
 
@@ -98,9 +102,10 @@
         text-transform: uppercase;
         color: $color-white;
         position: absolute;
-        top:12rem;
-        right:2rem;
-        text-align: right;
+        top:45%;
+        left:50%;
+        text-align:center;
+        transform: translate(-50%,-50%);
         width:75%;
 
     }

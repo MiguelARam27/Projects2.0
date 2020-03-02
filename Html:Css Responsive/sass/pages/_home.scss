@@ -222,6 +222,11 @@
     background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark);
 
 
+    @include respond(phone){
+           
+        padding: 20rem 2rem;
+      }
+
     &__container{
         margin: 0 auto;
         width: 90%;
@@ -259,6 +264,10 @@
             url(../../img/nat-10.jpg);
           }
 
+          @include respond(phone){
+            height: auto;
+          }
+
 
     }
 
@@ -274,6 +283,14 @@
             
           }
          
+    }
+
+    &__title{
+
+        @include respond(tab-port){
+           
+            text-align: center;
+          }
     }
 }
 

@@ -1,9 +1,29 @@
 .form{
+
+
     &__group:not(:last-child){
         margin-bottom: 2rem;
-        
+
+        @include respond(phone){
+           
+            margin-bottom: 1rem;
+          }
 
     }
+
+    &__group:last-child{
+    
+
+        @include respond(phone){
+           
+            margin-bottom: 4rem;
+          }
+
+    }
+
+
+
+
 
     
 
@@ -94,4 +114,13 @@
     &__radio-input:checked ~ &__radio-label &__radio-button::after{
         opacity: 1;
     }
+
+    &__button{
+        @include respond(tab-port){
+               
+            text-align: center;
+          }
+    }
+
+    
 }

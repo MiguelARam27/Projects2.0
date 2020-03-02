@@ -189,6 +189,10 @@ body {
   margin-top: 4rem !important;
 }
 
+.u-margin-top-small {
+  margin-top: 2rem !important;
+}
+
 .u-margin-top-big {
   margin-top: 8rem !important;
 }
@@ -416,23 +420,23 @@ body {
   background-size: cover;
   height: 23rem;
   background-blend-mode: soft-light;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0, 100%);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 .card__picture-1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../../img/nat-5.jpg");
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("https://optinmonster.com/wp-content/uploads/2019/09/blogging-statistics.png");
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
 }
 .card__picture-2 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../../img/nat-6.jpg");
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8-v4nFUeWNxNHvMz6JHtUv6uN-oovpr8okWW6Ua0mbwfUe-9o");
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
 }
 .card__picture-3 {
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../../img/nat-6.jpg");
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 50%);
 }
 .card__heading {
   font-size: 2.8rem;
@@ -440,9 +444,10 @@ body {
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  top: 12rem;
-  right: 2rem;
-  text-align: right;
+  top: 45%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
   width: 75%;
 }
 .card__heading-span {
@@ -516,6 +521,16 @@ body {
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .form__group:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .form__group:last-child {
+    margin-bottom: 4rem;
+  }
 }
 .form__input {
   font-size: 1.5rem;
@@ -593,6 +608,11 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1;
 }
+@media only screen and (max-width: 56.25em) {
+  .form__button {
+    text-align: center;
+  }
+}
 
 .popup {
   height: 100vh;
@@ -669,7 +689,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("https://www.oxfordlearning.com/wp-content/uploads/2009/05/tips-for-easier-studying-860x420.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -683,7 +703,7 @@ body {
 }
 @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
   .header {
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("https://www.oxfordlearning.com/wp-content/uploads/2009/05/tips-for-easier-studying-860x420.jpg");
   }
 }
 .header__logo-box {
@@ -902,6 +922,11 @@ body {
   padding: 17rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
+@media only screen and (max-width: 37.5em) {
+  .book {
+    padding: 20rem 2rem;
+  }
+}
 .book__container {
   margin: 0 auto;
   width: 90%;
@@ -923,6 +948,11 @@ body {
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../../img/nat-10.jpg);
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .book__box {
+    height: auto;
+  }
+}
 .book__form {
   width: 50%;
   padding: 6rem;
@@ -932,6 +962,12 @@ body {
     width: 100%;
   }
 }
+@media only screen and (max-width: 56.25em) {
+  .book__title {
+    text-align: center;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
