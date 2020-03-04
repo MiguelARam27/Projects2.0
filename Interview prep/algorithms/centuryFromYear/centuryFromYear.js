@@ -23,8 +23,15 @@
 let centuryFromYear = (year)=>{
 
 
+    if(year%100===0){
+        return year/100
+    }else{
+        return Math.floor(year/100)+1
+    }
+
 }
 
 
 console.log(centuryFromYear(1900));
 console.log(centuryFromYear(1924));
+console.log(centuryFromYear(1743));
