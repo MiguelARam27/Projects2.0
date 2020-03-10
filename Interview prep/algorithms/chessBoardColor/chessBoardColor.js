@@ -26,7 +26,11 @@ let chessBoardCellColor = (cell1,cell2) =>{
 
     console.log(color(piece1))
     console.log(color(piece2))
-
+    if(color(piece1)===color(piece2)){
+        return true
+    }else{
+        return false
+    }
     
 
 }
