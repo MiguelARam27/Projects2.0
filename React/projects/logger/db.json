@@ -1,11 +1,11 @@
 {
   "logs": [
     {
-      "message": "First message ",
-      "attention": true,
-      "tech": "Miguel",
-      "date": "2020-04-04T18:34:49.102Z",
-      "id": 1
+      "id": 1,
+      "message": "First message updated",
+      "attention": false,
+      "tech": "Mike",
+      "date": "2020-04-04T20:46:29.466Z"
     },
     {
       "message": "second log no attention",
