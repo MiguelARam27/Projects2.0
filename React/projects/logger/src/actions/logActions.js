@@ -17,9 +17,9 @@ export const getLogs = () => {
     return async (dispatch) =>{
         try {
             setLoading();
+            
             const res = await fetch('http://localhost:5000/logs');
             const data = await res.json();
-
             dispatch({
                 type: GET_LOGS,
                 payload:data
@@ -27,7 +27,7 @@ export const getLogs = () => {
         } catch (error) {
             dispatch({
                 type:LOGS_ERROR,
-                payload:error.response.data
+                payload:error.response.statusText
             })
             
         }
@@ -54,7 +54,7 @@ export const addLog = (log) => {
         } catch (error) {
             dispatch({
                 type:LOGS_ERROR,
-                payload:error.response.data
+                payload:error.response.statusText
             })
             
         }
@@ -75,7 +75,7 @@ export const deleteLog = (id) => {
         } catch (error) {
             dispatch({
                 type:LOGS_ERROR,
-                payload:error.response.data
+                payload:error.response.statusText
             })
             
         }
@@ -102,7 +102,7 @@ export const updateLog = (log) => {
         } catch (error) {
             dispatch({
                 type:LOGS_ERROR,
-                payload:error.response.data
+                payload:error.response.statusText
             })
             
         }
@@ -122,7 +122,7 @@ export const searchLogs = (text) => {
         } catch (error) {
             dispatch({
                 type:LOGS_ERROR,
-                payload:error.response.data
+                payload:error.response.statusText
             })
             
         }
