@@ -25,9 +25,7 @@ const App =()=>{
   return (
     <Provider store = {store}>
       <Fragment>
-        <div style={example}>
         <SearchBar/>
-        </div>
         <div className="container">
           <AddButton/>
           <AddTechModal/>
@@ -40,8 +38,5 @@ const App =()=>{
     </Provider>
   );
 }
-const example ={
-  width:'60%',
-  margin:'0 auto'
-}
+
 export default App;

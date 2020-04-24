@@ -10,8 +10,10 @@ const TechsListModal = ({tech, getTechs}) => {
 
     console.log(techs)
     useEffect(()=>{
+       
         getTechs();
-        //eslint-disable-next-line
+        console.log('this is running')
+        //esling-disable-next-line
     },[]);
 
     
