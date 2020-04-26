@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://Miguel123:Photo2020@@cluster0-w5yeg.mongodb.net/test?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://Miguel123:Photo2020@@cluster0-w5yeg.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtToken": "MyTokenSecret"
 }
