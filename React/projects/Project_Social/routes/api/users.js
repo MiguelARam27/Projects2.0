@@ -8,7 +8,7 @@ const { check, validationResult } = require('express-validator');
 const config = require('config');
 
 
-const User = require('../../models/Users');
+const User = require('../../models/User');
 
 //@route  POST api/users
 //@desc  Test route
@@ -55,9 +55,11 @@ router.post('/', [
 
         await user.save();
 
-        const payload = {
-            id: user.id,
 
+        const payload = {
+            user: {
+                id: user.id
+            }
         };
         jwt.sign(
             payload,
