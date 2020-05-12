@@ -1,4 +1,6 @@
 {
     "mongoURI": "mongodb+srv://Miguel123:Photo2020@@cluster0-w5yeg.mongodb.net/test?retryWrites=true&w=majority",
-    "jwtToken": "MyTokenSecret"
+    "jwtToken": "MyTokenSecret",
+    "githubClientId": "06d02372013d6e9d46b7",
+    "githubSecret": "1f8d005b7ef1d22af24bc71fc9cf70b4a2569c3e"
 }
