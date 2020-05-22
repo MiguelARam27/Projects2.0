@@ -13,8 +13,8 @@ export const Landing = () => {
                         other developers
                     </p>
                     <div className="buttons">
-                        <Link to="/login" className="btn btn-primary">Sign Up</Link>
-                        <Link to="/register" className="btn btn-light">Login</Link>
+                        <Link to="/register" className="btn btn-primary">Sign Up</Link>
+                        <Link to="/login" className="btn btn-light">Login</Link>
                     </div>
                 </div>
             </div>
