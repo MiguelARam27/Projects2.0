@@ -9,6 +9,14 @@ const Navbar = ({ logout, auth: { isAuthenticated, loading } }) => {
     const authLinks = (
         <ul>
             <li>
+                <Link to='/login'>
+                    <i className="fas fa-sign-out-alt" />{' '}
+                    <span className='hide-sm'>
+                        Dashboard
+                    </span>
+                </Link>
+            </li>
+            <li>
                 <a onClick={logout} href="#!">
                     <i className="fas fa-sign-out-alt">
                     </i><span className='hide-sm'>logout</span></a>
@@ -29,7 +37,6 @@ const Navbar = ({ logout, auth: { isAuthenticated, loading } }) => {
             <h1>
                 <Link to="/"><i className="fas fa-code"></i> DevConnector</Link>
             </h1>
-            {/* {!loading && (<Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>)} */}
             {!loading && (
                 <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
             )}
@@ -45,4 +52,4 @@ Navbar.propTypes = {
 const mapStateToProps = state => ({
     auth: state.auth
 });
-export default connect(mapStateToProps, { logout })(Navbar);
+export default connect(mapStateToProps, { logout })(Navbar);;;;

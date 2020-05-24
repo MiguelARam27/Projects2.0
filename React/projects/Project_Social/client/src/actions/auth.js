@@ -98,6 +98,7 @@ export const login = (email, password) => async dispatch => {
 
 //logout user
 export const logout = () => dispatch => {
+    console.log("I ran");
     dispatch({
         type: LOGOUT
     });
