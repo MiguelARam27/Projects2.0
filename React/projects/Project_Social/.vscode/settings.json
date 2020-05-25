@@ -2,5 +2,8 @@
     "explorer.compactFolders": false,
     "editor.formatOnSave": true,
     "prettier.printWidth": 80,
-    "javascript.format.semicolons": "insert"
+    "javascript.format.semicolons": "insert",
+    "prettier.jsxBracketSameLine": true,
+    "prettier.trailingComma": "all",
+    "[json]": {}
 }
