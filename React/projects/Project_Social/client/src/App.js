@@ -22,7 +22,9 @@ if (localStorage.token) {
 
   setAuthToken(localStorage.token);
 }
-
+if (!localStorage.token) {
+  console.log('error');
+}
 const App = () => {
 
   useEffect(() => {
